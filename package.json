@@ -1,0 +1,8 @@
+{
+  "name": "coffee_script",
+  "version": "0.1.0",
+  "description": "Sample Coffee Script Application",
+  "author": "Brennan King",
+  "devDependencies": {
+  }
+}
