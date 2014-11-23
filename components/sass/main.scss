@@ -1,0 +1,147 @@
+/*resets*/
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+/*color variables*/
+$text-dark : #111;
+$text-medium : #444;
+$text-light : #666;
+
+$indigo-dark: #3f51bf;
+$indigo-medium: #7986cb;
+$indigo-light: #c5cae9;
+
+$red-dark: #e51c23;
+$red-medium: #f36c60;
+$red-light: #f9bdbb;
+
+$shade-black: #000;
+$shade-dark: #212121;
+$shade-medium: #616161;
+$shade-light: #f1f1f1;
+$shade-lightest: #f5f5f5;
+$shade-white: #fff;
+
+/*mixins*/
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+@mixin border-top-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+  -webkit-border-top-left-radius: $radius;
+  border-top-left-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+  -webkit-border-top-left-radius: $radius;
+  border-top-left-radius: $radius;
+  background-clip: padding-box;
+}
+
+/*General Features*/
+body {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: $text-dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {font-size: 3em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2em;}
+h4 {font-size: 1.5em;}
+h5 {font-size: 1.25em;}
+h6 {font-size: 1em;}
+
+li {list-style-type: disc; list-style-position: inside;padding: 0px 0px 0px 25px;}
+
+a {color: $text-dark; text-decoration: none;}
+
+/*nav classes*/
+
+.nav-initial {
+  width: 980px;
+  margin: 80px auto;
+  text-align: center;
+}
+.nav-initial a {
+  /*  display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;*/
+  margin: 0px 70px;
+  vertical-align: middle;
+  text-align: center;
+  color: $text-dark;
+  font-size: 1.7em;
+  font-weight: 100;
+}
+
+.nav-initial a:hover {
+  border-bottom: 1px solid $text-medium;
+}
+
+/*Container Classes*/
+
+.wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.elevator-pitch {
+  position: relative;
+  width: 900px;
+  height: 300px;
+  padding: 75px 0px 25px 0px;
+  margin: 0 auto;
+}
+
+/*content classes*/
+.elevator-pitch-content {
+  position: absolute;
+  left: 400px;
+  width: 500px;
+  height: 300px;
+  vertical-align: middle;
+
+}
+
+/*image classes*/
+
+.avatar {
+  float: left;
+  width: 250px;
+  height: 275px;
+  padding: 25px 50px 0px 50px;
+  border-right: 3px solid $shade-light;
+  img {
+    @include border-radius(125px);
+  }
+}

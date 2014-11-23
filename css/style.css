@@ -1,0 +1,218 @@
+/*resets*/
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+/* line 8, ../main.scss */
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/* line 8, ../main.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../main.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 8, ../main.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 8, ../main.scss */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 8, ../main.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 8, ../main.scss */
+caption, th {
+  text-align: left;
+}
+
+/* line 8, ../main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 8, ../main.scss */
+q:before, q:after {
+  content: '';
+}
+
+/* line 8, ../main.scss */
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* line 8, ../main.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 8, ../main.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 8, ../main.scss */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+}
+
+/* line 8, ../main.scss */
+legend {
+  color: #000;
+}
+
+/* line 8, ../main.scss */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+/*color variables*/
+/*mixins*/
+/*General Features*/
+/* line 66, ../main.scss */
+body {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #111111;
+}
+
+/* line 72, ../main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* line 76, ../main.scss */
+h1 {
+  font-size: 3em;
+}
+
+/* line 77, ../main.scss */
+h2 {
+  font-size: 2.5em;
+}
+
+/* line 78, ../main.scss */
+h3 {
+  font-size: 2em;
+}
+
+/* line 79, ../main.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 80, ../main.scss */
+h5 {
+  font-size: 1.25em;
+}
+
+/* line 81, ../main.scss */
+h6 {
+  font-size: 1em;
+}
+
+/* line 83, ../main.scss */
+li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 0px 0px 0px 25px;
+}
+
+/* line 85, ../main.scss */
+a {
+  color: #111111;
+  text-decoration: none;
+}
+
+/*nav classes*/
+/* line 89, ../main.scss */
+.nav-initial {
+  width: 980px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+/* line 94, ../main.scss */
+.nav-initial a {
+  /*  display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;*/
+  margin: 0px 70px;
+  vertical-align: middle;
+  text-align: center;
+  color: #111111;
+  font-size: 1.7em;
+  font-weight: 100;
+}
+
+/* line 107, ../main.scss */
+.nav-initial a:hover {
+  border-bottom: 1px solid #444444;
+}
+
+/*Container Classes*/
+/* line 113, ../main.scss */
+.wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* line 118, ../main.scss */
+.elevator-pitch {
+  position: relative;
+  width: 900px;
+  height: 300px;
+  padding: 75px 0px 25px 0px;
+  margin: 0 auto;
+}
+
+/*content classes*/
+/* line 127, ../main.scss */
+.elevator-pitch-content {
+  position: absolute;
+  left: 400px;
+  width: 500px;
+  height: 300px;
+  vertical-align: middle;
+}
+
+/*image classes*/
+/* line 138, ../main.scss */
+.avatar {
+  float: left;
+  width: 250px;
+  height: 275px;
+  padding: 25px 50px 0px 50px;
+  border-right: 3px solid #f1f1f1;
+}
+/* line 144, ../main.scss */
+.avatar img {
+  -webkit-border-radius: 125px;
+  border-radius: 125px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
