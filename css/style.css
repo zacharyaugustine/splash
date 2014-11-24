@@ -89,78 +89,73 @@ legend {
   display: none;
 }
 
-/*color variables*/
-/*mixins*/
-/*General Features*/
-/* line 66, ../main.scss */
+/* line 85, ../main.scss */
 body {
   font-size: 16px;
   font-family: "Open Sans";
   color: #111111;
 }
 
-/* line 72, ../main.scss */
+/* line 91, ../main.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-/* line 76, ../main.scss */
+/* line 95, ../main.scss */
 h1 {
   font-size: 3em;
 }
 
-/* line 77, ../main.scss */
+/* line 96, ../main.scss */
 h2 {
   font-size: 2.5em;
 }
 
-/* line 78, ../main.scss */
+/* line 97, ../main.scss */
 h3 {
   font-size: 2em;
 }
 
-/* line 79, ../main.scss */
+/* line 98, ../main.scss */
 h4 {
   font-size: 1.5em;
 }
 
-/* line 80, ../main.scss */
+/* line 99, ../main.scss */
 h5 {
   font-size: 1.25em;
 }
 
-/* line 81, ../main.scss */
+/* line 100, ../main.scss */
 h6 {
   font-size: 1em;
 }
 
-/* line 83, ../main.scss */
+/* line 102, ../main.scss */
 li {
   list-style-type: disc;
   list-style-position: inside;
   padding: 0px 0px 0px 25px;
 }
 
-/* line 85, ../main.scss */
+/* line 104, ../main.scss */
 a {
   color: #111111;
   text-decoration: none;
 }
 
-/*nav classes*/
-/* line 89, ../main.scss */
+/* line 108, ../main.scss */
 .nav-initial {
-  width: 980px;
-  margin: 80px auto;
+  position: absolute;
+  top: 450px;
+  width: 100%;
+  margin: 0px auto;
   text-align: center;
+  transition: all 1s;
 }
 
-/* line 94, ../main.scss */
+/* line 116, ../main.scss */
 .nav-initial a {
-  /*  display: inline-block;
-    width: 150px;
-    height: 50px;
-    line-height: 50px;*/
   margin: 0px 70px;
   vertical-align: middle;
   text-align: center;
@@ -169,19 +164,43 @@ a {
   font-weight: 100;
 }
 
-/* line 107, ../main.scss */
+/* line 125, ../main.scss */
 .nav-initial a:hover {
   border-bottom: 1px solid #444444;
 }
 
+/* line 129, ../main.scss */
+.nav-secondary {
+  position: fixed;
+  top: 0px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0px auto;
+  background: #212121;
+}
+/* line 136, ../main.scss */
+.nav-secondary a {
+  color: white;
+}
+/* line 139, ../main.scss */
+.nav-secondary a:hover {
+  border-bottom: 1px solid white;
+}
+
 /*Container Classes*/
-/* line 113, ../main.scss */
+/* line 142, ../main.scss */
+.page {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+/* line 146, ../main.scss */
 .wrapper {
   width: 980px;
   margin: 0 auto;
 }
 
-/* line 118, ../main.scss */
+/* line 151, ../main.scss */
 .elevator-pitch {
   position: relative;
   width: 900px;
@@ -190,8 +209,33 @@ a {
   margin: 0 auto;
 }
 
-/*content classes*/
-/* line 127, ../main.scss */
+/* line 159, ../main.scss */
+.projects {
+  position: fixed;
+  bottom: 0px;
+  height: 350px;
+  width: 100%;
+  padding: 10px 0px;
+  background: #212121;
+  color: white;
+  text-align: center;
+  transition: all 1s;
+}
+/* line 169, ../main.scss */
+.projects h2 {
+  font-weight: 400;
+}
+
+/* line 173, ../main.scss */
+.projects-hidden {
+  height: 60px;
+}
+/* line 175, ../main.scss */
+.projects-hidden h2 {
+  display: none;
+}
+
+/* line 180, ../main.scss */
 .elevator-pitch-content {
   position: absolute;
   left: 400px;
@@ -200,8 +244,7 @@ a {
   vertical-align: middle;
 }
 
-/*image classes*/
-/* line 138, ../main.scss */
+/* line 190, ../main.scss */
 .avatar {
   float: left;
   width: 250px;
@@ -209,7 +252,7 @@ a {
   padding: 25px 50px 0px 50px;
   border-right: 3px solid #f1f1f1;
 }
-/* line 144, ../main.scss */
+/* line 196, ../main.scss */
 .avatar img {
   -webkit-border-radius: 125px;
   border-radius: 125px;

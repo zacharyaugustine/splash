@@ -7,7 +7,7 @@ http://yuilibrary.com/license/
 */
 html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
-/*color variables*/
+//color variables
 $text-dark : #111;
 $text-medium : #444;
 $text-light : #666;
@@ -20,14 +20,33 @@ $red-dark: #e51c23;
 $red-medium: #f36c60;
 $red-light: #f9bdbb;
 
-$shade-black: #000;
+$black: #000;
 $shade-dark: #212121;
 $shade-medium: #616161;
 $shade-light: #f1f1f1;
 $shade-lightest: #f5f5f5;
-$shade-white: #fff;
+$white: #fff;
 
-/*mixins*/
+//Response Screen Size Variables and mixin
+$mobile: 480px;
+$small: 767px;
+$medium: 992px;
+$large: 1200px;
+
+@mixin respond-to($value) {
+  // If the key exists in the map
+  @if $value != null {
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+//mixins
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   border-radius: $radius;
@@ -62,7 +81,7 @@ $shade-white: #fff;
   background-clip: padding-box;
 }
 
-/*General Features*/
+//General Features
 body {
   font-size: 16px;
   font-family: "Open Sans";
@@ -80,22 +99,21 @@ h4 {font-size: 1.5em;}
 h5 {font-size: 1.25em;}
 h6 {font-size: 1em;}
 
-li {list-style-type: disc; list-style-position: inside;padding: 0px 0px 0px 25px;}
+li {list-style-type: disc; list-style-position: inside; padding: 0px 0px 0px 25px;}
 
 a {color: $text-dark; text-decoration: none;}
 
-/*nav classes*/
+//nav classes
 
 .nav-initial {
-  width: 980px;
-  margin: 80px auto;
+  position: absolute;
+  top: 450px;
+  width: 100%;
+  margin: 0px auto;
   text-align: center;
+  transition: all 1s;
 }
 .nav-initial a {
-  /*  display: inline-block;
-    width: 150px;
-    height: 50px;
-    line-height: 50px;*/
   margin: 0px 70px;
   vertical-align: middle;
   text-align: center;
@@ -108,8 +126,23 @@ a {color: $text-dark; text-decoration: none;}
   border-bottom: 1px solid $text-medium;
 }
 
+.nav-secondary {
+  position: fixed;
+  top: 0px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0px auto;
+  background: $shade-dark;
+  a {
+    color: $white;
+  }
+  a:hover {border-bottom: 1px solid $white;}
+}
 /*Container Classes*/
-
+.page {
+  width: 1500px;
+  margin: 0 auto;
+}
 .wrapper {
   width: 980px;
   margin: 0 auto;
@@ -123,17 +156,36 @@ a {color: $text-dark; text-decoration: none;}
   margin: 0 auto;
 }
 
-/*content classes*/
+.projects {
+  position: fixed;
+  bottom: 0px;
+  height: 350px;
+  width: 100%;
+  padding: 10px 0px;
+  background: $shade-dark;
+  color: $white;
+  text-align: center;
+  transition: all 1s;
+  h2 {
+    font-weight: 400;
+  }
+}
+.projects-hidden {
+  height: 60px;
+  h2 {
+    display: none;
+  }
+}
+//content classes
 .elevator-pitch-content {
   position: absolute;
   left: 400px;
   width: 500px;
   height: 300px;
   vertical-align: middle;
-
 }
 
-/*image classes*/
+//image classes
 
 .avatar {
   float: left;

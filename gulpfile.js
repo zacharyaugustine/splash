@@ -21,7 +21,7 @@ var sass_sources = [
 
 var js_sources = [
     'components/lib/jquery-2.1.1.js',
-    'components/scripts/*.js'
+    'components/scripts/script.js'
 ];
 
 gulp.task('js', function() {
