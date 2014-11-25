@@ -11,6 +11,8 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 $text-dark : #111;
 $text-medium : #444;
 $text-light : #666;
+$text-lightest : #aaa;
+
 
 $indigo-dark: #3f51bf;
 $indigo-medium: #7986cb;
@@ -23,8 +25,9 @@ $red-light: #f9bdbb;
 $black: #000;
 $shade-dark: #212121;
 $shade-medium: #616161;
+$shade-feint: #818181;
 $shade-light: #f1f1f1;
-$shade-lightest: #f5f5f5;
+$shade-lightest: #f8f8f8;
 $white: #fff;
 
 //Response Screen Size Variables and mixin
@@ -122,9 +125,7 @@ a {color: $text-dark; text-decoration: none;}
   font-weight: 100;
 }
 
-.nav-initial a:hover {
-  border-bottom: 1px solid $text-medium;
-}
+.nav-initial a:hover { border-bottom: 1px solid $text-medium;}
 
 .nav-secondary {
   position: fixed;
@@ -137,7 +138,13 @@ a {color: $text-dark; text-decoration: none;}
     color: $white;
   }
   a:hover {border-bottom: 1px solid $white;}
+  #nav-back {display: inline-block}
+  #nav-back:hover {border-bottom: none;}
+  #experience {cursor: default; color: $text-lightest;}
+  #experience:hover { border-bottom: none;}
 }
+
+#nav-back {display: none; cursor: pointer;}
 /*Container Classes*/
 .page {
   width: 1500px;
@@ -154,6 +161,9 @@ a {color: $text-dark; text-decoration: none;}
   height: 300px;
   padding: 75px 0px 25px 0px;
   margin: 0 auto;
+}
+#resume {
+  padding-top: 70px;
 }
 
 .projects {
@@ -185,6 +195,43 @@ a {color: $text-dark; text-decoration: none;}
   vertical-align: middle;
 }
 
+.resume-card {
+  width: 980px;
+  height: 300px;
+  margin: 0 auto;
+  background: $white;
+  @include border-top-radius(30px);
+  box-shadow: 0px 1px 3px #999;
+  h3 {
+    padding-left: 10px;
+    background: $shade-lightest;
+    border-bottom: 1px solid $shade-light;
+    box-shadow: 0px 1px 3px #999;
+    margin-bottom: 25px;
+  }
+  .card-image {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    img {
+      height: 200px;
+      width: 200px;
+    }
+  }
+  .card-content {
+    display: inline-block;
+    ul {
+      padding: 10px 0px 0px 50px;
+    }
+    ul li {
+      list-style: circle;
+    }
+  }
+}
+.card-image {
+  float: left;
+}
 //image classes
 
 .avatar {
