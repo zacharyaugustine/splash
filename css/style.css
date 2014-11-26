@@ -171,6 +171,7 @@ a {
 
 /* line 130, ../main.scss */
 .nav-secondary {
+  z-index: 2;
   position: fixed;
   top: 0px;
   height: 60px;
@@ -178,52 +179,52 @@ a {
   margin: 0px auto;
   background: #212121;
 }
-/* line 137, ../main.scss */
+/* line 138, ../main.scss */
 .nav-secondary a {
   color: white;
 }
-/* line 140, ../main.scss */
+/* line 141, ../main.scss */
 .nav-secondary a:hover {
   border-bottom: 1px solid white;
 }
-/* line 141, ../main.scss */
+/* line 142, ../main.scss */
 .nav-secondary #nav-back {
   display: inline-block;
 }
-/* line 142, ../main.scss */
+/* line 143, ../main.scss */
 .nav-secondary #nav-back:hover {
   border-bottom: none;
 }
-/* line 143, ../main.scss */
+/* line 144, ../main.scss */
 .nav-secondary #experience {
   cursor: default;
   color: #aaaaaa;
 }
-/* line 144, ../main.scss */
+/* line 145, ../main.scss */
 .nav-secondary #experience:hover {
   border-bottom: none;
 }
 
-/* line 147, ../main.scss */
+/* line 148, ../main.scss */
 #nav-back {
   display: none;
   cursor: pointer;
 }
 
 /*Container Classes*/
-/* line 149, ../main.scss */
+/* line 150, ../main.scss */
 .page {
   width: 1500px;
   margin: 0 auto;
 }
 
-/* line 153, ../main.scss */
+/* line 154, ../main.scss */
 .wrapper {
   width: 980px;
   margin: 0 auto;
 }
 
-/* line 158, ../main.scss */
+/* line 159, ../main.scss */
 .elevator-pitch {
   position: relative;
   width: 900px;
@@ -232,16 +233,31 @@ a {
   margin: 0 auto;
 }
 
-/* line 165, ../main.scss */
+/* line 166, ../main.scss */
 #resume {
-  padding-top: 70px;
+  padding: 70px 0px;
+  display: none;
+}
+/* line 169, ../main.scss */
+#resume h3 {
+  margin: 25px auto 0 auto;
+  width: 930px;
+  padding-left: 50px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #f1f1f1;
+  box-shadow: 0px 1px 3px #999;
 }
 
-/* line 169, ../main.scss */
+/* line 179, ../main.scss */
+#resume.showing {
+  display: block;
+}
+
+/* line 182, ../main.scss */
 .projects {
-  position: fixed;
+  position: absolute;
+  top: 550px;
   bottom: 0px;
-  height: 350px;
   width: 100%;
   padding: 10px 0px;
   background: #212121;
@@ -249,21 +265,22 @@ a {
   text-align: center;
   transition: all 1s;
 }
-/* line 179, ../main.scss */
+/* line 192, ../main.scss */
 .projects h2 {
   font-weight: 400;
 }
 
-/* line 183, ../main.scss */
+/* line 196, ../main.scss */
 .projects-hidden {
-  height: 60px;
+  display: none;
+  padding: 0px;
 }
-/* line 185, ../main.scss */
+/* line 199, ../main.scss */
 .projects-hidden h2 {
   display: none;
 }
 
-/* line 190, ../main.scss */
+/* line 204, ../main.scss */
 .elevator-pitch-content {
   position: absolute;
   left: 400px;
@@ -272,58 +289,75 @@ a {
   vertical-align: middle;
 }
 
-/* line 198, ../main.scss */
-.resume-card {
-  width: 980px;
-  height: 300px;
-  margin: 0 auto;
-  background: white;
-  -webkit-border-top-right-radius: 30px;
-  border-top-right-radius: 30px;
-  -webkit-border-top-left-radius: 30px;
-  border-top-left-radius: 30px;
-  background-clip: padding-box;
-  box-shadow: 0px 1px 3px #999;
-}
-/* line 205, ../main.scss */
-.resume-card h3 {
-  padding-left: 10px;
-  background: #f8f8f8;
-  border-bottom: 1px solid #f1f1f1;
-  box-shadow: 0px 1px 3px #999;
-  margin-bottom: 25px;
-}
 /* line 212, ../main.scss */
+.resume-card {
+  z-index: -3;
+  display: block;
+  width: 980px;
+  height: 220px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background: white;
+  box-shadow: 0px 1px 3px #999;
+}
+/* line 221, ../main.scss */
 .resume-card .card-image {
   display: inline-block;
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 200px;
   text-align: center;
 }
-/* line 217, ../main.scss */
+/* line 226, ../main.scss */
 .resume-card .card-image img {
   height: 200px;
   width: 200px;
 }
-/* line 222, ../main.scss */
+/* line 231, ../main.scss */
 .resume-card .card-content {
   display: inline-block;
+  width: 720px;
+  padding-top: 10px;
 }
-/* line 224, ../main.scss */
+/* line 235, ../main.scss */
+.resume-card .card-content p {
+  font-size: .85em;
+}
+/* line 236, ../main.scss */
 .resume-card .card-content ul {
+  font-size: .85em;
   padding: 10px 0px 0px 50px;
 }
-/* line 227, ../main.scss */
+/* line 240, ../main.scss */
 .resume-card .card-content ul li {
   list-style: circle;
 }
+/* line 241, ../main.scss */
+.resume-card .card-content a {
+  color: blue;
+  text-decoration: underline;
+}
 
-/* line 232, ../main.scss */
+/* line 244, ../main.scss */
 .card-image {
   float: left;
 }
 
-/* line 237, ../main.scss */
+/* line 248, ../main.scss */
+.resume-card.organization {
+  height: 180px;
+}
+/* line 250, ../main.scss */
+.resume-card.organization .card-image {
+  display: inline-block;
+  height: 180px;
+}
+/* line 253, ../main.scss */
+.resume-card.organization .card-image img {
+  height: 150px;
+  width: 150px;
+}
+
+/* line 261, ../main.scss */
 .avatar {
   float: left;
   width: 250px;
@@ -331,7 +365,7 @@ a {
   padding: 25px 50px 0px 50px;
   border-right: 3px solid #f1f1f1;
 }
-/* line 243, ../main.scss */
+/* line 267, ../main.scss */
 .avatar img {
   -webkit-border-radius: 125px;
   border-radius: 125px;
