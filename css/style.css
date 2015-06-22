@@ -649,7 +649,7 @@ a {
   -webkit-border-radius: 125px;
   border-radius: 125px;
   background-clip: padding-box;
-  box-shadow: 1px 1px 1px #000;
+  box-shadow: 3px 3px 3px #222;
   /* stops bg color from leaking outside the border: */
 }
 @media (max-width: 992px) {
