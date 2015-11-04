@@ -10,6 +10,10 @@ html {
   background: #FFF;
 }
 
+a {
+  color: orange;
+}
+
 /* line 7, ../main.scss */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
   margin: 0;
@@ -28,7 +32,7 @@ fieldset, img {
 }
 
 /* line 7, ../main.scss */
-address, caption, cite, code, dfn, em, strong, th, var {
+address, caption, cite, code, dfn, strong, th, var {
   font-style: normal;
   font-weight: normal;
 }
@@ -554,7 +558,7 @@ a {
 }
 /* line 390, ../main.scss */
 .resume-card .card-content a {
-  color: blue;
+  color: orange;
   text-decoration: underline;
 }
 @media (max-width: 992px) {
@@ -664,3 +668,15 @@ a {
 .project-container {
   margin-top: 150px;
 }
+
+.footer {
+  font-size: 12px;
+  color: gray;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  }
