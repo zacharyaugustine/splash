@@ -1,4 +1,2 @@
 # splash
-My personal website
-
-zacharyaugustine.github.io/splash
+[zacharyaugustine.github.io/splash](zacharyaugustine.github.io/splash)
