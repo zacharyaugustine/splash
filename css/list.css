@@ -1,0 +1,44 @@
+html {
+   /*background-image: url('../images/wood.jpg');*/
+   background: #fff;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 800px;
+  padding: 20px;
+  /*background: rgba(255, 255, 255, 0.5);*/
+  background: rgba(0, 0, 0, 0.25);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
