@@ -15,9 +15,13 @@ a {
 }
 
 /* line 7, ../main.scss */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+body, div, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0;
+}
+
+li {
+  margin-left: 30px;
 }
 
 /* line 7, ../main.scss */
@@ -177,7 +181,7 @@ a {
 
 /* line 139, ../main.scss */
 .nav-initial a {
-  margin: 0px 60px;
+  margin: 0px 20px; /*this is what you edit for the icon spacing */
   vertical-align: middle;
   text-align: center;
   color: #111111;
@@ -416,7 +420,7 @@ a {
 /* line 294, ../main.scss */
 .elevator-pitch-content {
   position: absolute;
-  left: 400px;
+  left: 370px;
   width: 500px;
   height: 300px;
   vertical-align: middle;
@@ -645,7 +649,7 @@ a {
   float: left;
   width: 250px;
   height: 275px;
-  padding: 25px 50px 0px 50px;
+  padding: 25px 50px 0px 25px;
   border-right: 3px solid #f1f1f1;
 }
 /* line 451, ../main.scss */
