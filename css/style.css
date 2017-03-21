@@ -30,7 +30,7 @@ html, body {
 }
 .inner2-navbar {
   position: relative;
-  padding: 75px;
+  padding: 75px 0px 0px 0px;
    /*float: left;*/
    /*clear: both;*/
 }
