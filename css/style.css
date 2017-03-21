@@ -30,7 +30,7 @@ html, body {
 }
 .inner2-navbar {
   position: relative;
-  /*padding: 75px;*/
+  padding: 75px 0px 0px 0px;
    /*float: left;*/
    /*clear: both;*/
 }
@@ -384,7 +384,7 @@ a {
 
 /* line 246, ../main.scss */
 #resume {
-  padding: 70px 0px;
+  /*padding: 70px 0px 0px 0px;*/
   display: none;
 }
 /* line 249, ../main.scss */
