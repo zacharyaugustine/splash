@@ -30,7 +30,6 @@ html, body {
 }
 .inner2-navbar {
   position: relative;
-  padding: 75px 0px 0px 0px;
    /*float: left;*/
    /*clear: both;*/
 }
@@ -384,7 +383,7 @@ a {
 
 /* line 246, ../main.scss */
 #resume {
-  /*padding: 70px 0px;*/
+  padding: 70px 0px;
   display: none;
 }
 /* line 249, ../main.scss */
@@ -452,7 +451,7 @@ a {
 .elevator-pitch-content {
   position: absolute;
   left: 370px;
-  width: 500px;
+  width: 600px;
   height: 300px;
   vertical-align: middle;
 }
