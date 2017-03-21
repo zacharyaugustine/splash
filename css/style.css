@@ -21,7 +21,12 @@ body, div, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset
 }
 
 li {
-  margin-left: 30px;
+  margin-left: 75px;
+}
+
+li span {
+  display: block;
+  margin-: -0.25em;
 }
 
 /* line 7, ../main.scss */
@@ -141,8 +146,8 @@ h6 {
 /* line 116, ../main.scss */
 li {
   list-style-type: disc;
-  list-style-position: inside;
-  padding: 0px 0px 0px 25px;
+  list-style-position: outside;
+  padding: 0px 0px 0px 5px;
 }
 
 /* line 118, ../main.scss */
